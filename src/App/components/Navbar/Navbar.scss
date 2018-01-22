@@ -1,0 +1,15 @@
+@import '..//../style/vars';
+nav {
+  background: $color-primary;
+  justify-content: center;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1rem;
+    .logo {
+      margin: 0 10px;
+    }
+  }
+}

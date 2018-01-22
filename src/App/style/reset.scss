@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@import 'vars';
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.app {
+  margin: 0 auto;
+  * {
+    align-items: center;
+  }
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
+  .container {
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+}

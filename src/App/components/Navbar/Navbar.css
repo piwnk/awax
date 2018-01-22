@@ -1,0 +1,16 @@
+nav {
+  background: black;
+  justify-content: center;
+  width: 100%;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1rem;
+}
+
+nav .container .logo {
+  margin: 0 10px;
+}
