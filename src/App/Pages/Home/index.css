@@ -6,15 +6,25 @@
   justify-content: center;
 }
 
+.home,
+.home p,
+.home button {
+  color: white;
+}
+
 .home h1 {
   font-size: 72px;
   margin: 0;
 }
 
-.home h1:first-child {
-  color: white;
-}
-
 .home h1:nth-child(2) {
   color: #B88B58;
+}
+
+.home button {
+  width: 194px;
+  height: 45px;
+  border-radius: 20px;
+  background-color: #b78b57;
+  border: none;
 }
