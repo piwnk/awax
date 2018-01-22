@@ -12,3 +12,8 @@ $color-facebook: #336197;
 $color-google-plus: #e74137;
 $color-pinterest: #b71b29;
 
+@mixin center-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

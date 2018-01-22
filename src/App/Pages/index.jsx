@@ -12,7 +12,7 @@ export default () => (
       <Redirect exact from="/" to="/home" />
 
       <Route path="/home" component={Home} />
-      <Route path="/about" component={About} />
+      <Route path="/aboutus" component={About} />
 
       <Route component={NoMatch} />
     </Switch>

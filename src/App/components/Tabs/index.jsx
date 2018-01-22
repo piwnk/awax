@@ -1,21 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
+import { setActiveTab } from './actions';
 
 import './Tabs.css';
 
 const Container = ({ names, activeTab, setActiveTab }) => (
   <ul>
-    {names.map((name, i) => (
-      <li
+    {names.map((name, i) => {
+      const nameShort = name.split(' ').join('');
+      return (
+        <Link 
+        to={`/${nameShort}`}
         key={i}
-        className={activeTab === name ? 'active' : ''}
-        onMouseOver={e => console.log(e.target.className)}
-        // onClick={e => setActiveTab(e.target.text)}
-        onClick={e => console.log(e.target.innerText.toLowerCase().replace(/ /g, '-'))}
-      >
+        className={activeTab === nameShort ? 'active' : ''}
+        // onMouseOver={e => console.log(e.target.className)}
+        onClick={() => setActiveTab(nameShort)}
+        >
         {name}
-      </li>
-    ))}
+      </Link>
+      )
+    })}
   </ul>
 )
 
@@ -25,6 +31,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = ({
   // handleClick: 
+  setActiveTab,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Container)
