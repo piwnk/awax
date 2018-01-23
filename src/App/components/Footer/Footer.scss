@@ -1,6 +1,7 @@
 @import '..//../style/vars';
 
 footer {
+  @include center-all;
   background: $color-primary;
   color: white;
   font-size: 1rem;

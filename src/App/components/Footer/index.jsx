@@ -5,7 +5,7 @@ import './Footer.css';
 export default () => (
   <footer>
     <div className="container">
-      <h1>Welcome Footer!</h1>
+      <p>Copyright &copy; 2018</p>
     </div>
   </footer>
 );

@@ -12,8 +12,11 @@ $color-facebook: #336197;
 $color-google-plus: #e74137;
 $color-pinterest: #b71b29;
 
+$shadow: 0 0 8px 3px white;
+
 @mixin center-all {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }

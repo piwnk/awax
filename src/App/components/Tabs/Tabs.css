@@ -4,7 +4,6 @@ ul {
   grid-auto-flow: column;
   list-style: none;
   height: 100%;
-  margin-right: 10px;
 }
 
 ul a {
