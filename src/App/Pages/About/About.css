@@ -1,0 +1,17 @@
+.about .content {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  grid-gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about .content .about-left p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.about .content .about-right {
+  box-shadow: 0 0 30px 3px grey;
+  height: 252px;
+}

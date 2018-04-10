@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import { AutoRotatingCarousel, Slide } from 'material-auto-rotating-carousel';
 // import { green400, green600, blue400, blue600, red400, red600 } from 'material-ui/styles/colors';
@@ -9,6 +10,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import phone from './phone.svg';
+
+import { setActiveTab } from '../../components/Tabs/actions';
 
 import './Home.css';
 
@@ -35,26 +38,21 @@ const abouts = [
   'readability'
 ]
 
-export default () => (
+const Container = ({ setActiveTab }) => (
   <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-    <section className="home">
+    <div className="home">
       <AutoRotatingCarousel
-        // label="Get started"
-        // label={<button>GET IN TOUCH!</button>}
         interval={5000}
         open
         style={{ position: "static", background: "none", border: "none" }}
       >
         {abouts.map((item, i) => <CustomSlide key={i} about={item.toUpperCase()} />)}
-        {/* <Slide
-              media={<img src="http://www.icons101.com/icon_png/size_256/id_79394/youtube.png" />}
-              mediaBackgroundStyle={{ background: "none" }}
-              contentStyle={{ background: "none" }}
-              title="This is a very cool feature"
-              subtitle="Just using this will blow your mind."
-            /> */}
+
       </AutoRotatingCarousel>
-      <Link to="/contactus">
+      <Link
+        to="/contactus"
+        onClick={() => setActiveTab('contactus')}
+      >
         <button className="contactus-btn" >GET IN TOUCH!</button>
       </Link>
       <a href="tel:5555555555">
@@ -62,6 +60,12 @@ export default () => (
           <img src={phone} alt="phone" />
         </button>
       </a>
-    </section>
+    </div>
   </MuiThemeProvider>
 )
+
+const mapDispatchToProps = {
+  setActiveTab,
+}
+
+export default connect(null, mapDispatchToProps)(Container);

@@ -12,7 +12,8 @@ $color-facebook: #336197;
 $color-google-plus: #e74137;
 $color-pinterest: #b71b29;
 
-$shadow: 0 0 8px 3px white;
+$halo-big: 0 0 30px 3px grey;
+$halo-small: 0 0 8px 3px grey;
 
 @mixin center-all {
   display: flex;

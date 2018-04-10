@@ -20,4 +20,23 @@
     margin: 0 auto;
     max-width: 1080px;
   }
+  nav {
+    grid-row: 1;
+  }
+  #page {
+    grid-row: 2;
+  }
+  footer {
+    grid-row: 3;
+  }
+}
+
+button {
+  border: 0;
+  background: $color-secondary;
+  // box-shadow: $halo-small;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 50px;
+  margin: 30px auto;
 }

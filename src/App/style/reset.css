@@ -20,3 +20,24 @@
   margin: 0 auto;
   max-width: 1080px;
 }
+
+.app nav {
+  grid-row: 1;
+}
+
+.app #page {
+  grid-row: 2;
+}
+
+.app footer {
+  grid-row: 3;
+}
+
+button {
+  border: 0;
+  background: #B88B58;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 50px;
+  margin: 30px auto;
+}
