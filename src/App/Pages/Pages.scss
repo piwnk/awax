@@ -1,0 +1,26 @@
+@import '../style/vars';
+#page {
+  // flex-direction: column;
+  section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-rows: 120px 1fr;
+  }
+  .header {
+    @include center-all;
+    text-transform: uppercase;
+    height: 200px;
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 15px;
+      color: lightgrey;
+    }
+    .content {
+      margin-top: 0;
+    }
+  }
+}

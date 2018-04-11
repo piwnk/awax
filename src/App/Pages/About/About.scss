@@ -1,0 +1,21 @@
+@import '..//../style/vars';
+.about {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    grid-gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // align-content: center;
+    .about-left {
+      p {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .about-right {
+      box-shadow: $halo-big;
+      height: 252px;
+    }
+  }
+}

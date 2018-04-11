@@ -37,17 +37,11 @@
 
 .home a button {
   position: absolute;
-  border: 0;
-  background: #B88B58;
-  box-shadow: 0 0 8px 3px white;
 }
 
 .home a button.contactus-btn {
-  width: 194px;
-  height: 45px;
-  border-radius: 20px;
-  margin-top: 100px;
   transform: translate(-50%, -50%);
+  margin: 0;
   bottom: 30%;
 }
 
@@ -55,6 +49,8 @@
   border-radius: 50%;
   height: 70px;
   width: 70px;
-  bottom: 70px;
+  bottom: 20px;
   right: 20px;
+  padding: 0;
+  margin: 0;
 }

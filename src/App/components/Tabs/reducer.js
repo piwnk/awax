@@ -1,8 +1,9 @@
 import { SET_ACTIVE_TAB } from './actions';
 
+const currentRoute = window.location.href.split('/').slice(-1)[0]
 
 const initialState = {
-  activeTab: window.location.href.split('/').slice(-1)[0],
+  activeTab: currentRoute || 'home',
 };
 
 export default (state = initialState, action) => {
